@@ -32,7 +32,7 @@ xiaoyu1M
 [Debug]2017/12/26 16:11:41 [Frame]doubtable_fileup_module Register Message:120
 [Debug]2017/12/26 16:11:41 [Frame]process_property_module Register Message:112
 [Debug]2017/12/26 16:11:41 [Frame]doubtable_fileup_module Register Message:120
-[Debug]2017/12/26 16:11:41 [Frame]sensitive_file_module Register Message:142
+[Debug]2017/12/26 16:11:41 [Frame]sensitive_file_module Register Message:14222
 [Error]2017/12/26 16:11:41 [SensitiveFileMonitor]read config error open ./conf/sensitivefilepolicyconf.json: no such file or directory
 [Debug]2017/12/26 16:11:41 [Frame]dso_check_module Register Message:135
 [Debug]2017/12/26 16:11:41 [Frame]system_completeness_check_module Register Message:137
