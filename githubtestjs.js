@@ -10005,4 +10005,817 @@ xiaoyu1M
 [Info]2017/12/26 19:04:58 [system]receive signalquit
 [Info]2017/12/26 19:04:58 [system]worker end.
 [Info]2017/12/26 19:04:58 [system]process is closed.
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:01:09 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:01:09 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:01:10 {16.202531332313356 {8257900544 5990625280 2267275264 27.455831562991516 94871552} [{lo 23541 23541 174 23541} {eth0 6271 17281 33 17281}] [10.121.201.72]}
+[Error]2017/12/26 19:01:10 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:01:10 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286069899,"data":{"machine_cpupercent":16.202531332313356,"machine_mempercent":{"total":8257900544,"available":5990625280,"used":2267275264,"usedPercent":27.455831562991516,"free":94871552},"machine_netflow":[{"name":"lo","bytes_sent_rate":23541,"bytes_recv_rate":23541,"packets_sent_rate":174,"packets_recv_rate":23541},{"name":"eth0","bytes_sent_rate":6271,"bytes_recv_rate":17281,"packets_sent_rate":33,"packets_recv_rate":17281}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:01:10 {{20762624 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 4.000000000002046 0.25142738}
+[Error]2017/12/26 19:01:10 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:01:10 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286069972,"data":{"process_mem":{"rss":20762624,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":4.000000000002046,"process_mem_percent":0.25142738}}
+[Info]2017/12/26 19:01:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:26 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286069899,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":16.202531332313356,"machine_mempercent":{"available":5990625280,"free":94871552,"total":8257900544,"used":2267275264,"usedPercent":27.455831562991516},"machine_netflow":[{"bytes_recv_rate":23541,"bytes_sent_rate":23541,"name":"lo","packets_recv_rate":23541,"packets_sent_rate":174},{"bytes_recv_rate":17281,"bytes_sent_rate":6271,"name":"eth0","packets_recv_rate":17281,"packets_sent_rate":33}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286069972,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":4.000000000002046,"process_mem":{"rss":20762624,"swap":0,"vms":369635328},"process_mem_percent":0.25142738}}]}
+[Info]2017/12/26 19:01:26 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:01:28 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:28 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:01:39 [file notify]Scan file's data timely
+[Info]2017/12/26 19:01:39 [file notify]file count :25
+[Info]2017/12/26 19:01:39 [file notify]scan file timely
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 19:01:39 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 19:01:41 [log]log cleaner monitor
+[Info]2017/12/26 19:01:41 [log]scan /home/work/lcz/hosteye/493/output/log/log.txt
+[Info]2017/12/26 19:01:58 [HeartBeatMoudle]up heartbeat new policy timely
+[Error]2017/12/26 19:01:58 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 19:01:58 [Frame]status_up_module Receive Message:{"module":"heartbeat_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 19:01:59 [MachineDataModule]Up new Policy timely
+[Error]2017/12/26 19:01:59 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 19:01:59 [Frame]status_up_module Receive Message:{"module":"machine_data_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 19:01:59 [ProcessProprety]Up new Policy timely
+[Error]2017/12/26 19:01:59 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 19:01:59 [Frame]status_up_module Receive Message:{"module":"process_property_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 19:02:11 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:02:11 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:02:12 {12.846347370690106 {8257900544 5990035456 2267865088 27.462974104813824 90427392} [{lo 23685 23685 176 23685} {eth0 8716 66463 70 66463}] [10.121.201.72]}
+[Error]2017/12/26 19:02:12 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:02:12 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286131905,"data":{"machine_cpupercent":12.846347370690106,"machine_mempercent":{"total":8257900544,"available":5990035456,"used":2267865088,"usedPercent":27.462974104813824,"free":90427392},"machine_netflow":[{"name":"lo","bytes_sent_rate":23685,"bytes_recv_rate":23685,"packets_sent_rate":176,"packets_recv_rate":23685},{"name":"eth0","bytes_sent_rate":8716,"bytes_recv_rate":66463,"packets_sent_rate":70,"packets_recv_rate":66463}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:02:12 {{20766720 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 4.000000000002046 0.251477}
+[Error]2017/12/26 19:02:12 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:02:12 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286131979,"data":{"process_mem":{"rss":20766720,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":4.000000000002046,"process_mem_percent":0.251477}}
+[Info]2017/12/26 19:02:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:26 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286131905,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.846347370690106,"machine_mempercent":{"available":5990035456,"free":90427392,"total":8257900544,"used":2267865088,"usedPercent":27.462974104813824},"machine_netflow":[{"bytes_recv_rate":23685,"bytes_sent_rate":23685,"name":"lo","packets_recv_rate":23685,"packets_sent_rate":176},{"bytes_recv_rate":66463,"bytes_sent_rate":8716,"name":"eth0","packets_recv_rate":66463,"packets_sent_rate":70}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286131979,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":4.000000000002046,"process_mem":{"rss":20766720,"swap":0,"vms":369635328},"process_mem_percent":0.251477}}]}
+[Info]2017/12/26 19:02:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:02:29 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:29 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:03:13 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:03:13 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:03:14 {12.280701590586542 {8257900544 5988868096 2269032448 27.477110385503817 89112576} [{lo 23005 23005 171 23005} {eth0 5413 6595 23 6595}] [10.121.201.72]}
+[Error]2017/12/26 19:03:14 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:03:14 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286193912,"data":{"machine_cpupercent":12.280701590586542,"machine_mempercent":{"total":8257900544,"available":5988868096,"used":2269032448,"usedPercent":27.477110385503817,"free":89112576},"machine_netflow":[{"name":"lo","bytes_sent_rate":23005,"bytes_recv_rate":23005,"packets_sent_rate":171,"packets_recv_rate":23005},{"name":"eth0","bytes_sent_rate":5413,"bytes_recv_rate":6595,"packets_sent_rate":23,"packets_recv_rate":6595}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:03:14 {{20766720 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 1.999999999998181 0.251477}
+[Error]2017/12/26 19:03:14 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:03:14 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286193986,"data":{"process_mem":{"rss":20766720,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":1.999999999998181,"process_mem_percent":0.251477}}
+[Info]2017/12/26 19:03:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:27 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286193912,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.280701590586542,"machine_mempercent":{"available":5988868096,"free":89112576,"total":8257900544,"used":2269032448,"usedPercent":27.477110385503817},"machine_netflow":[{"bytes_recv_rate":23005,"bytes_sent_rate":23005,"name":"lo","packets_recv_rate":23005,"packets_sent_rate":171},{"bytes_recv_rate":6595,"bytes_sent_rate":5413,"name":"eth0","packets_recv_rate":6595,"packets_sent_rate":23}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286193986,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":1.999999999998181,"process_mem":{"rss":20766720,"swap":0,"vms":369635328},"process_mem_percent":0.251477}}]}
+[Info]2017/12/26 19:03:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:03:30 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:30 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:03:40 [file notify]Scan file's data timely
+[Info]2017/12/26 19:03:40 [file notify]file count :25
+[Info]2017/12/26 19:03:40 [file notify]scan file timely
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 19:03:40 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 19:04:15 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:04:15 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:04:16 {13.316583255108478 {8257900544 5988274176 2269626368 27.484302528310998 78397440} [{lo 23808 23808 179 23808} {eth0 6013 9397 32 9397}] [10.121.201.72]}
+[Error]2017/12/26 19:04:16 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:04:16 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286255918,"data":{"machine_cpupercent":13.316583255108478,"machine_mempercent":{"total":8257900544,"available":5988274176,"used":2269626368,"usedPercent":27.484302528310998,"free":78397440},"machine_netflow":[{"name":"lo","bytes_sent_rate":23808,"bytes_recv_rate":23808,"packets_sent_rate":179,"packets_recv_rate":23808},{"name":"eth0","bytes_sent_rate":6013,"bytes_recv_rate":9397,"packets_sent_rate":32,"packets_recv_rate":9397}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:04:16 {{20770816 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 3.999999999996362 0.2515266}
+[Error]2017/12/26 19:04:16 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:04:16 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286255997,"data":{"process_mem":{"rss":20770816,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":3.999999999996362,"process_mem_percent":0.2515266}}
+[Info]2017/12/26 19:04:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:27 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286255918,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":13.316583255108478,"machine_mempercent":{"available":5988274176,"free":78397440,"total":8257900544,"used":2269626368,"usedPercent":27.484302528310998},"machine_netflow":[{"bytes_recv_rate":23808,"bytes_sent_rate":23808,"name":"lo","packets_recv_rate":23808,"packets_sent_rate":179},{"bytes_recv_rate":9397,"bytes_sent_rate":6013,"name":"eth0","packets_recv_rate":9397,"packets_sent_rate":32}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286255997,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":3.999999999996362,"process_mem":{"rss":20770816,"swap":0,"vms":369635328},"process_mem_percent":0.2515266}}]}
+[Info]2017/12/26 19:04:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:04:31 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:31 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:04:58 [system]receive signalquit
+[Info]2017/12/26 19:04:58 [system]worker end.
+[Info]2017/12/26 19:04:58 [system]process is closed.
+[Info]2017/12/26 19:04:15 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:04:15 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:04:16 {13.316583255108478 {8257900544 5988274176 2269626368 27.484302528310998 78397440} [{lo 23808 23808 179 23808} {eth0 6013 9397 32 9397}] [10.121.201.72]}
+[Error]2017/12/26 19:04:16 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:04:16 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286255918,"data":{"machine_cpupercent":13.316583255108478,"machine_mempercent":{"total":8257900544,"available":5988274176,"used":2269626368,"usedPercent":27.484302528310998,"free":78397440},"machine_netflow":[{"name":"lo","bytes_sent_rate":23808,"bytes_recv_rate":23808,"packets_sent_rate":179,"packets_recv_rate":23808},{"name":"eth0","bytes_sent_rate":6013,"bytes_recv_rate":9397,"packets_sent_rate":32,"packets_recv_rate":9397}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:04:16 {{20770816 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 3.999999999996362 0.2515266}
+[Error]2017/12/26 19:04:16 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:04:16 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286255997,"data":{"process_mem":{"rss":20770816,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":3.999999999996362,"process_mem_percent":0.2515266}}
+[Info]2017/12/26 19:04:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:27 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286255918,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":13.316583255108478,"machine_mempercent":{"available":5988274176,"free":78397440,"total":8257900544,"used":2269626368,"usedPercent":27.484302528310998},"machine_netflow":[{"bytes_recv_rate":23808,"bytes_sent_rate":23808,"name":"lo","packets_recv_rate":23808,"packets_sent_rate":179},{"bytes_recv_rate":9397,"bytes_sent_rate":6013,"name":"eth0","packets_recv_rate":9397,"packets_sent_rate":32}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286255997,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":3.999999999996362,"process_mem":{"rss":20770816,"swap":0,"vms":369635328},"process_mem_percent":0.2515266}}]}
+[Info]2017/12/26 19:04:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:04:31 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:31 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:04:58 [system]receive signalquit
+[Info]2017/12/26 19:04:58 [system]worker end.
+[Info]2017/12/26 19:04:58 [system]process is closed.
+
+[Info]2017/12/26 18:51:34 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 18:51:34 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 18:51:34 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 18:51:34 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 18:51:34 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 18:51:41 [log]log cleaner monitor
+[Info]2017/12/26 18:51:41 [log]scan /home/work/lcz/hosteye/493/output/log/log.txt
+[Info]2017/12/26 18:51:51 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:51:51 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:51:52 {12.311557687348463 {8257900544 5987041280 2270859264 27.499232424759022 80392192} [{lo 23029 23029 170 23029} {eth0 6044 20352 35 20352}] [10.121.201.72]}
+[Error]2017/12/26 18:51:52 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:51:52 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285511833,"data":{"machine_cpupercent":12.311557687348463,"machine_mempercent":{"total":8257900544,"available":5987041280,"used":2270859264,"usedPercent":27.499232424759022,"free":80392192},"machine_netflow":[{"name":"lo","bytes_sent_rate":23029,"bytes_recv_rate":23029,"packets_sent_rate":170,"packets_recv_rate":23029},{"name":"eth0","bytes_sent_rate":6044,"bytes_recv_rate":20352,"packets_sent_rate":35,"packets_recv_rate":20352}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:51:52 {{20504576 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 2.9999999999972715 0.24835213}
+[Error]2017/12/26 18:51:52 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:51:52 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285511903,"data":{"process_mem":{"rss":20504576,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":2.9999999999972715,"process_mem_percent":0.24835213}}
+[Info]2017/12/26 18:51:57 [HeartBeatMoudle]up heartbeat new policy timely
+[Error]2017/12/26 18:51:57 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 18:51:57 [Frame]status_up_module Receive Message:{"module":"heartbeat_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 18:51:58 [MachineDataModule]Up new Policy timely
+[Error]2017/12/26 18:51:58 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 18:51:58 [Frame]status_up_module Receive Message:{"module":"machine_data_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 18:51:58 [ProcessProprety]Up new Policy timely
+[Error]2017/12/26 18:51:58 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 18:51:58 [Frame]status_up_module Receive Message:{"module":"process_property_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:52:19 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:52:19 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:52:19 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:52:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:52:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:52:24 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285511833,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.311557687348463,"machine_mempercent":{"available":5987041280,"free":80392192,"total":8257900544,"used":2270859264,"usedPercent":27.499232424759022},"machine_netflow":[{"bytes_recv_rate":23029,"bytes_sent_rate":23029,"name":"lo","packets_recv_rate":23029,"packets_sent_rate":170},{"bytes_recv_rate":20352,"bytes_sent_rate":6044,"name":"eth0","packets_recv_rate":20352,"packets_sent_rate":35}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285511903,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":2.9999999999972715,"process_mem":{"rss":20504576,"swap":0,"vms":369635328},"process_mem_percent":0.24835213}}]}
+[Info]2017/12/26 18:52:24 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:52:53 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:52:53 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:52:54 {13.216956973060295 {8257900544 5989048320 2268852224 27.47492794216922 82018304} [{lo 23231 23231 171 23231} {eth0 5668 6517 27 6517}] [10.121.201.72]}
+[Error]2017/12/26 18:52:54 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:52:54 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285573839,"data":{"machine_cpupercent":13.216956973060295,"machine_mempercent":{"total":8257900544,"available":5989048320,"used":2268852224,"usedPercent":27.47492794216922,"free":82018304},"machine_netflow":[{"name":"lo","bytes_sent_rate":23231,"bytes_recv_rate":23231,"packets_sent_rate":171,"packets_recv_rate":23231},{"name":"eth0","bytes_sent_rate":5668,"bytes_recv_rate":6517,"packets_sent_rate":27,"packets_recv_rate":6517}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:52:54 {{20516864 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 4.000000014903208 0.24988976}
+[Error]2017/12/26 18:52:54 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:52:54 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285573914,"data":{"process_mem":{"rss":20516864,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":4.000000014903208,"process_mem_percent":0.24988976}}
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:53:20 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:53:20 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:53:20 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:53:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:53:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:53:24 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285573839,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":13.216956973060295,"machine_mempercent":{"available":5989048320,"free":82018304,"total":8257900544,"used":2268852224,"usedPercent":27.47492794216922},"machine_netflow":[{"bytes_recv_rate":23231,"bytes_sent_rate":23231,"name":"lo","packets_recv_rate":23231,"packets_sent_rate":171},{"bytes_recv_rate":6517,"bytes_sent_rate":5668,"name":"eth0","packets_recv_rate":6517,"packets_sent_rate":27}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285573914,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":4.000000014903208,"process_mem":{"rss":20516864,"swap":0,"vms":369635328},"process_mem_percent":0.24988976}}]}
+[Info]2017/12/26 18:53:24 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:53:35 [file notify]Scan file's data timely
+[Info]2017/12/26 18:53:35 [file notify]file count :25
+[Info]2017/12/26 18:53:35 [file notify]scan file timely
+[Info]2017/12/26 18:53:35 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 18:53:35 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 18:53:35 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 18:53:35 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 18:53:35 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 18:53:55 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:53:55 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:53:56 {12.999999895691872 {8257900544 5988384768 2269515776 27.48296330171932 80982016} [{lo 23359 23359 172 23359} {eth0 5532 6670 25 6670}] [10.121.201.72]}
+[Error]2017/12/26 18:53:56 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:53:56 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285635846,"data":{"machine_cpupercent":12.999999895691872,"machine_mempercent":{"total":8257900544,"available":5988384768,"used":2269515776,"usedPercent":27.48296330171932,"free":80982016},"machine_netflow":[{"name":"lo","bytes_sent_rate":23359,"bytes_recv_rate":23359,"packets_sent_rate":172,"packets_recv_rate":23359},{"name":"eth0","bytes_sent_rate":5532,"bytes_recv_rate":6670,"packets_sent_rate":25,"packets_recv_rate":6670}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:53:56 {{20746240 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 3.999999985095201 0.251229}
+[Error]2017/12/26 18:53:56 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:53:56 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285635921,"data":{"process_mem":{"rss":20746240,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":3.999999985095201,"process_mem_percent":0.251229}}
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:54:21 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:54:21 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:54:21 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:54:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:54:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:54:24 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285635846,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.999999895691872,"machine_mempercent":{"available":5988384768,"free":80982016,"total":8257900544,"used":2269515776,"usedPercent":27.48296330171932},"machine_netflow":[{"bytes_recv_rate":23359,"bytes_sent_rate":23359,"name":"lo","packets_recv_rate":23359,"packets_sent_rate":172},{"bytes_recv_rate":6670,"bytes_sent_rate":5532,"name":"eth0","packets_recv_rate":6670,"packets_sent_rate":25}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285635921,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":3.999999985095201,"process_mem":{"rss":20746240,"swap":0,"vms":369635328},"process_mem_percent":0.251229}}]}
+[Info]2017/12/26 18:54:24 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:54:57 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:54:57 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:54:58 {13.032581366586392 {8257900544 5989879808 2268020736 27.464858942239157 82124800} [{lo 22896 22896 169 22896} {eth0 5776 3436 24 3436}] [10.121.201.72]}
+[Error]2017/12/26 18:54:58 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:54:58 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285697852,"data":{"machine_cpupercent":13.032581366586392,"machine_mempercent":{"total":8257900544,"available":5989879808,"used":2268020736,"usedPercent":27.464858942239157,"free":82124800},"machine_netflow":[{"name":"lo","bytes_sent_rate":22896,"bytes_recv_rate":22896,"packets_sent_rate":169,"packets_recv_rate":22896},{"name":"eth0","bytes_sent_rate":5776,"bytes_recv_rate":3436,"packets_sent_rate":24,"packets_recv_rate":3436}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:54:58 {{20746240 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 5.050505058868242 0.251229}
+[Error]2017/12/26 18:54:58 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:54:58 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285697928,"data":{"process_mem":{"rss":20746240,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":5.050505058868242,"process_mem_percent":0.251229}}
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:55:22 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:55:22 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:55:22 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:55:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:55:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:55:24 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285697852,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":13.032581366586392,"machine_mempercent":{"available":5989879808,"free":82124800,"total":8257900544,"used":2268020736,"usedPercent":27.464858942239157},"machine_netflow":[{"bytes_recv_rate":22896,"bytes_sent_rate":22896,"name":"lo","packets_recv_rate":22896,"packets_sent_rate":169},{"bytes_recv_rate":3436,"bytes_sent_rate":5776,"name":"eth0","packets_recv_rate":3436,"packets_sent_rate":24}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285697928,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":5.050505058868242,"process_mem":{"rss":20746240,"swap":0,"vms":369635328},"process_mem_percent":0.251229}}]}
+[Info]2017/12/26 18:55:25 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:55:36 [file notify]Scan file's data timely
+[Info]2017/12/26 18:55:36 [file notify]file count :25
+[Info]2017/12/26 18:55:36 [file notify]scan file timely
+[Info]2017/12/26 18:55:36 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 18:55:36 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 18:55:36 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 18:55:36 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 18:55:36 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 18:55:59 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:55:59 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:56:00 {17.128463661378955 {8257900544 5987733504 2270167040 27.490849858314785 93519872} [{lo 28381 28381 206 28381} {eth0 6989 18310 39 18310}] [10.121.201.72]}
+[Error]2017/12/26 18:56:00 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:56:00 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285759862,"data":{"machine_cpupercent":17.128463661378955,"machine_mempercent":{"total":8257900544,"available":5987733504,"used":2270167040,"usedPercent":27.490849858314785,"free":93519872},"machine_netflow":[{"name":"lo","bytes_sent_rate":28381,"bytes_recv_rate":28381,"packets_sent_rate":206,"packets_recv_rate":28381},{"name":"eth0","bytes_sent_rate":6989,"bytes_recv_rate":18310,"packets_sent_rate":39,"packets_recv_rate":18310}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:56:00 {{20750336 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 5.000000018633273 0.2513282}
+[Error]2017/12/26 18:56:00 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:56:00 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285759936,"data":{"process_mem":{"rss":20750336,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":5.000000018633273,"process_mem_percent":0.2513282}}
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:56:23 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:56:23 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:56:23 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:56:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:56:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:56:25 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285759862,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":17.128463661378955,"machine_mempercent":{"available":5987733504,"free":93519872,"total":8257900544,"used":2270167040,"usedPercent":27.490849858314785},"machine_netflow":[{"bytes_recv_rate":28381,"bytes_sent_rate":28381,"name":"lo","packets_recv_rate":28381,"packets_sent_rate":206},{"bytes_recv_rate":18310,"bytes_sent_rate":6989,"name":"eth0","packets_recv_rate":18310,"packets_sent_rate":39}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285759936,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":5.000000018633273,"process_mem":{"rss":20750336,"swap":0,"vms":369635328},"process_mem_percent":0.2513282}}]}
+[Info]2017/12/26 18:56:25 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:56:41 [log]log cleaner monitor
+[Info]2017/12/26 18:56:41 [log]scan /home/work/lcz/hosteye/493/output/log/log.txt
+[Info]2017/12/26 18:57:01 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:57:01 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:57:02 {12.090680209482551 {8257900544 5989273600 2268626944 27.472199888000976 94703616} [{lo 22921 22921 170 22921} {eth0 5438 6276 23 6276}] [10.121.201.72]}
+[Error]2017/12/26 18:57:02 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:57:02 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285821871,"data":{"machine_cpupercent":12.090680209482551,"machine_mempercent":{"total":8257900544,"available":5989273600,"used":2268626944,"usedPercent":27.472199888000976,"free":94703616},"machine_netflow":[{"name":"lo","bytes_sent_rate":22921,"bytes_recv_rate":22921,"packets_sent_rate":170,"packets_recv_rate":22921},{"name":"eth0","bytes_sent_rate":5438,"bytes_recv_rate":6276,"packets_sent_rate":23,"packets_recv_rate":6276}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:57:02 {{20754432 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 3.960396033178665 0.2513778}
+[Error]2017/12/26 18:57:02 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:57:02 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285821945,"data":{"process_mem":{"rss":20754432,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":3.960396033178665,"process_mem_percent":0.2513778}}
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:57:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:57:24 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:57:24 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:57:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:57:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:57:25 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285821871,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.090680209482551,"machine_mempercent":{"available":5989273600,"free":94703616,"total":8257900544,"used":2268626944,"usedPercent":27.472199888000976},"machine_netflow":[{"bytes_recv_rate":22921,"bytes_sent_rate":22921,"name":"lo","packets_recv_rate":22921,"packets_sent_rate":170},{"bytes_recv_rate":6276,"bytes_sent_rate":5438,"name":"eth0","packets_recv_rate":6276,"packets_sent_rate":23}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285821945,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":3.960396033178665,"process_mem":{"rss":20754432,"swap":0,"vms":369635328},"process_mem_percent":0.2513778}}]}
+[Info]2017/12/26 18:57:25 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:57:37 [file notify]Scan file's data timely
+[Info]2017/12/26 18:57:37 [file notify]file count :25
+[Info]2017/12/26 18:57:37 [file notify]scan file timely
+[Info]2017/12/26 18:57:37 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 18:57:37 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 18:57:37 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 18:57:37 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 18:57:37 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 18:58:03 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:58:03 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:58:04 {11.779448234051246 {8257900544 5987037184 2270863360 27.499282025743906 92344320} [{lo 23306 23306 172 23306} {eth0 5699 9595 29 9595}] [10.121.201.72]}
+[Error]2017/12/26 18:58:04 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:58:04 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285883877,"data":{"machine_cpupercent":11.779448234051246,"machine_mempercent":{"total":8257900544,"available":5987037184,"used":2270863360,"usedPercent":27.499282025743906,"free":92344320},"machine_netflow":[{"name":"lo","bytes_sent_rate":23306,"bytes_recv_rate":23306,"packets_sent_rate":172,"packets_recv_rate":23306},{"name":"eth0","bytes_sent_rate":5699,"bytes_recv_rate":9595,"packets_sent_rate":29,"packets_recv_rate":9595}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:58:04 {{20762624 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 3.9603960477862143 0.25142738}
+[Error]2017/12/26 18:58:04 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:58:04 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285883952,"data":{"process_mem":{"rss":20762624,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":3.9603960477862143,"process_mem_percent":0.25142738}}
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:58:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:58:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:58:25 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:58:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:58:25 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:58:25 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285883877,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":11.779448234051246,"machine_mempercent":{"available":5987037184,"free":92344320,"total":8257900544,"used":2270863360,"usedPercent":27.499282025743906},"machine_netflow":[{"bytes_recv_rate":23306,"bytes_sent_rate":23306,"name":"lo","packets_recv_rate":23306,"packets_sent_rate":172},{"bytes_recv_rate":9595,"bytes_sent_rate":5699,"name":"eth0","packets_recv_rate":9595,"packets_sent_rate":29}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285883952,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":3.9603960477862143,"process_mem":{"rss":20762624,"swap":0,"vms":369635328},"process_mem_percent":0.25142738}}]}
+[Info]2017/12/26 18:58:26 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:59:05 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 18:59:05 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 18:59:06 {13.283207644715446 {8257900544 5988990976 2268909568 27.4756223559575 93949952} [{lo 23193 23193 171 23193} {eth0 5670 6354 26 6354}] [10.121.201.72]}
+[Error]2017/12/26 18:59:06 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:59:06 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514285945884,"data":{"machine_cpupercent":13.283207644715446,"machine_mempercent":{"total":8257900544,"available":5988990976,"used":2268909568,"usedPercent":27.4756223559575,"free":93949952},"machine_netflow":[{"name":"lo","bytes_sent_rate":23193,"bytes_recv_rate":23193,"packets_sent_rate":171,"packets_recv_rate":23193},{"name":"eth0","bytes_sent_rate":5670,"bytes_recv_rate":6354,"packets_sent_rate":26,"packets_recv_rate":6354}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 18:59:06 {{20762624 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 2.9702970248854057 0.25142738}
+[Error]2017/12/26 18:59:06 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 18:59:06 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514285945958,"data":{"process_mem":{"rss":20762624,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":2.9702970248854057,"process_mem_percent":0.25142738}}
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 18:59:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:59:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 18:59:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:59:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 18:59:26 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514285945884,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":13.283207644715446,"machine_mempercent":{"available":5988990976,"free":93949952,"total":8257900544,"used":2268909568,"usedPercent":27.4756223559575},"machine_netflow":[{"bytes_recv_rate":23193,"bytes_sent_rate":23193,"name":"lo","packets_recv_rate":23193,"packets_sent_rate":171},{"bytes_recv_rate":6354,"bytes_sent_rate":5670,"name":"eth0","packets_recv_rate":6354,"packets_sent_rate":26}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514285945958,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":2.9702970248854057,"process_mem":{"rss":20762624,"swap":0,"vms":369635328},"process_mem_percent":0.25142738}}]}
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 18:59:26 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 18:59:26 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 18:59:38 [file notify]Scan file's data timely
+[Info]2017/12/26 18:59:38 [file notify]file count :25
+[Info]2017/12/26 18:59:38 [file notify]scan file timely
+[Info]2017/12/26 18:59:38 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 18:59:38 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 18:59:38 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 18:59:38 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 18:59:38 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 19:00:07 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:00:07 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:00:08 {12.5 {8257900544 5990285312 2267615232 27.45994844473632 94904320} [{lo 23103 23103 171 23103} {eth0 6368 9742 26 9742}] [10.121.201.72]}
+[Error]2017/12/26 19:00:08 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:00:08 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286007890,"data":{"machine_cpupercent":12.5,"machine_mempercent":{"total":8257900544,"available":5990285312,"used":2267615232,"usedPercent":27.45994844473632,"free":94904320},"machine_netflow":[{"name":"lo","bytes_sent_rate":23103,"bytes_recv_rate":23103,"packets_sent_rate":171,"packets_recv_rate":23103},{"name":"eth0","bytes_sent_rate":6368,"bytes_recv_rate":9742,"packets_sent_rate":26,"packets_recv_rate":9742}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:00:08 {{20762624 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 4.000000000002046 0.25142738}
+[Error]2017/12/26 19:00:08 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:00:08 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286007965,"data":{"process_mem":{"rss":20762624,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":4.000000000002046,"process_mem_percent":0.25142738}}
+[Info]2017/12/26 19:00:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:00:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:00:26 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286007890,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.5,"machine_mempercent":{"available":5990285312,"free":94904320,"total":8257900544,"used":2267615232,"usedPercent":27.45994844473632},"machine_netflow":[{"bytes_recv_rate":23103,"bytes_sent_rate":23103,"name":"lo","packets_recv_rate":23103,"packets_sent_rate":171},{"bytes_recv_rate":9742,"bytes_sent_rate":6368,"name":"eth0","packets_recv_rate":9742,"packets_sent_rate":26}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286007965,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":4.000000000002046,"process_mem":{"rss":20762624,"swap":0,"vms":369635328},"process_mem_percent":0.25142738}}]}
+[Info]2017/12/26 19:00:26 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:00:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:00:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:00:27 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:01:09 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:01:09 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:01:10 {16.202531332313356 {8257900544 5990625280 2267275264 27.455831562991516 94871552} [{lo 23541 23541 174 23541} {eth0 6271 17281 33 17281}] [10.121.201.72]}
+[Error]2017/12/26 19:01:10 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:01:10 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286069899,"data":{"machine_cpupercent":16.202531332313356,"machine_mempercent":{"total":8257900544,"available":5990625280,"used":2267275264,"usedPercent":27.455831562991516,"free":94871552},"machine_netflow":[{"name":"lo","bytes_sent_rate":23541,"bytes_recv_rate":23541,"packets_sent_rate":174,"packets_recv_rate":23541},{"name":"eth0","bytes_sent_rate":6271,"bytes_recv_rate":17281,"packets_sent_rate":33,"packets_recv_rate":17281}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:01:10 {{20762624 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 4.000000000002046 0.25142738}
+[Error]2017/12/26 19:01:10 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:01:10 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286069972,"data":{"process_mem":{"rss":20762624,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":4.000000000002046,"process_mem_percent":0.25142738}}
+[Info]2017/12/26 19:01:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:26 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286069899,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":16.202531332313356,"machine_mempercent":{"available":5990625280,"free":94871552,"total":8257900544,"used":2267275264,"usedPercent":27.455831562991516},"machine_netflow":[{"bytes_recv_rate":23541,"bytes_sent_rate":23541,"name":"lo","packets_recv_rate":23541,"packets_sent_rate":174},{"bytes_recv_rate":17281,"bytes_sent_rate":6271,"name":"eth0","packets_recv_rate":17281,"packets_sent_rate":33}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286069972,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":4.000000000002046,"process_mem":{"rss":20762624,"swap":0,"vms":369635328},"process_mem_percent":0.25142738}}]}
+[Info]2017/12/26 19:01:26 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:01:28 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:28 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:01:28 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:01:39 [file notify]Scan file's data timely
+[Info]2017/12/26 19:01:39 [file notify]file count :25
+[Info]2017/12/26 19:01:39 [file notify]scan file timely
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 19:01:39 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 19:01:39 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 19:01:41 [log]log cleaner monitor
+[Info]2017/12/26 19:01:41 [log]scan /home/work/lcz/hosteye/493/output/log/log.txt
+[Info]2017/12/26 19:01:58 [HeartBeatMoudle]up heartbeat new policy timely
+[Error]2017/12/26 19:01:58 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 19:01:58 [Frame]status_up_module Receive Message:{"module":"heartbeat_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 19:01:59 [MachineDataModule]Up new Policy timely
+[Error]2017/12/26 19:01:59 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 19:01:59 [Frame]status_up_module Receive Message:{"module":"machine_data_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 19:01:59 [ProcessProprety]Up new Policy timely
+[Error]2017/12/26 19:01:59 [Frame]status_up_modulePipe Size:0
+[Debug]2017/12/26 19:01:59 [Frame]status_up_module Receive Message:{"module":"process_property_module","status":"start","interval":60,"parameter":{}}
+[Info]2017/12/26 19:02:11 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:02:11 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:02:12 {12.846347370690106 {8257900544 5990035456 2267865088 27.462974104813824 90427392} [{lo 23685 23685 176 23685} {eth0 8716 66463 70 66463}] [10.121.201.72]}
+[Error]2017/12/26 19:02:12 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:02:12 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286131905,"data":{"machine_cpupercent":12.846347370690106,"machine_mempercent":{"total":8257900544,"available":5990035456,"used":2267865088,"usedPercent":27.462974104813824,"free":90427392},"machine_netflow":[{"name":"lo","bytes_sent_rate":23685,"bytes_recv_rate":23685,"packets_sent_rate":176,"packets_recv_rate":23685},{"name":"eth0","bytes_sent_rate":8716,"bytes_recv_rate":66463,"packets_sent_rate":70,"packets_recv_rate":66463}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:02:12 {{20766720 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 4.000000000002046 0.251477}
+[Error]2017/12/26 19:02:12 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:02:12 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286131979,"data":{"process_mem":{"rss":20766720,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":4.000000000002046,"process_mem_percent":0.251477}}
+[Info]2017/12/26 19:02:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:26 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:26 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286131905,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.846347370690106,"machine_mempercent":{"available":5990035456,"free":90427392,"total":8257900544,"used":2267865088,"usedPercent":27.462974104813824},"machine_netflow":[{"bytes_recv_rate":23685,"bytes_sent_rate":23685,"name":"lo","packets_recv_rate":23685,"packets_sent_rate":176},{"bytes_recv_rate":66463,"bytes_sent_rate":8716,"name":"eth0","packets_recv_rate":66463,"packets_sent_rate":70}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286131979,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":4.000000000002046,"process_mem":{"rss":20766720,"swap":0,"vms":369635328},"process_mem_percent":0.251477}}]}
+[Info]2017/12/26 19:02:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:02:29 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:29 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:02:29 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:03:13 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:03:13 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:03:14 {12.280701590586542 {8257900544 5988868096 2269032448 27.477110385503817 89112576} [{lo 23005 23005 171 23005} {eth0 5413 6595 23 6595}] [10.121.201.72]}
+[Error]2017/12/26 19:03:14 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:03:14 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286193912,"data":{"machine_cpupercent":12.280701590586542,"machine_mempercent":{"total":8257900544,"available":5988868096,"used":2269032448,"usedPercent":27.477110385503817,"free":89112576},"machine_netflow":[{"name":"lo","bytes_sent_rate":23005,"bytes_recv_rate":23005,"packets_sent_rate":171,"packets_recv_rate":23005},{"name":"eth0","bytes_sent_rate":5413,"bytes_recv_rate":6595,"packets_sent_rate":23,"packets_recv_rate":6595}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:03:14 {{20766720 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 1.999999999998181 0.251477}
+[Error]2017/12/26 19:03:14 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:03:14 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286193986,"data":{"process_mem":{"rss":20766720,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":1.999999999998181,"process_mem_percent":0.251477}}
+[Info]2017/12/26 19:03:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:27 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286193912,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":12.280701590586542,"machine_mempercent":{"available":5988868096,"free":89112576,"total":8257900544,"used":2269032448,"usedPercent":27.477110385503817},"machine_netflow":[{"bytes_recv_rate":23005,"bytes_sent_rate":23005,"name":"lo","packets_recv_rate":23005,"packets_sent_rate":171},{"bytes_recv_rate":6595,"bytes_sent_rate":5413,"name":"eth0","packets_recv_rate":6595,"packets_sent_rate":23}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286193986,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":1.999999999998181,"process_mem":{"rss":20766720,"swap":0,"vms":369635328},"process_mem_percent":0.251477}}]}
+[Info]2017/12/26 19:03:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:03:30 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:30 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Ip_list:[["10.121.201.72"]] Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:03:30 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:03:40 [file notify]Scan file's data timely
+[Info]2017/12/26 19:03:40 [file notify]file count :25
+[Info]2017/12/26 19:03:40 [file notify]scan file timely
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test3
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test7
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test4
+[Info]2017/12/26 19:03:40 [file notify]scan directory：/home/work/lcz/hosteye/test2
+[Info]2017/12/26 19:03:40 [file notify]skip delete file /home/work/lcz/hosteye/test7/lcz_g7
+[Info]2017/12/26 19:04:15 [MachineDataModule]Get machine Property timely
+[Info]2017/12/26 19:04:15 [ProcessProprety]Get agent process Property timely
+[Info]2017/12/26 19:04:16 {13.316583255108478 {8257900544 5988274176 2269626368 27.484302528310998 78397440} [{lo 23808 23808 179 23808} {eth0 6013 9397 32 9397}] [10.121.201.72]}
+[Error]2017/12/26 19:04:16 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:04:16 [Frame]dataup_module Receive Message:{"module":"machine_data_module","command_id":"","data_timestamp":1514286255918,"data":{"machine_cpupercent":13.316583255108478,"machine_mempercent":{"total":8257900544,"available":5988274176,"used":2269626368,"usedPercent":27.484302528310998,"free":78397440},"machine_netflow":[{"name":"lo","bytes_sent_rate":23808,"bytes_recv_rate":23808,"packets_sent_rate":179,"packets_recv_rate":23808},{"name":"eth0","bytes_sent_rate":6013,"bytes_recv_rate":9397,"packets_sent_rate":32,"packets_recv_rate":9397}],"ip_list":["10.121.201.72"]}}
+[Info]2017/12/26 19:04:16 {{20770816 369635328 0} {6319 agent.hosteye S 1 [0 0 0 0] [0 0 0 0] 7} 3.999999999996362 0.2515266}
+[Error]2017/12/26 19:04:16 [Frame]dataup_modulePipe Size:0
+[Debug]2017/12/26 19:04:16 [Frame]dataup_module Receive Message:{"module":"process_property_module","command_id":"","data_timestamp":1514286255997,"data":{"process_mem":{"rss":20770816,"vms":369635328,"swap":0},"process_base_data":{"pid":6319,"name":"agent.hosteye","status":"S","parent":1,"uids":[0,0,0,0],"gids":[0,0,0,0],"numThreads":7},"process_cpu_percent":3.999999999996362,"process_mem_percent":0.2515266}}
+[Info]2017/12/26 19:04:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:27 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:27 [DataUpModule]Data up request:{"agent_id":"d007b3373aacc8f4f168916835f9c74831a51519","host_name":"gzhxy-q3-bce-cloud-141.epc.baidu.com","data_list":[{"module":"machine_data_module","command_id":"","data_timestamp":1514286255918,"data":{"ip_list":["10.121.201.72"],"machine_cpupercent":13.316583255108478,"machine_mempercent":{"available":5988274176,"free":78397440,"total":8257900544,"used":2269626368,"usedPercent":27.484302528310998},"machine_netflow":[{"bytes_recv_rate":23808,"bytes_sent_rate":23808,"name":"lo","packets_recv_rate":23808,"packets_sent_rate":179},{"bytes_recv_rate":9397,"bytes_sent_rate":6013,"name":"eth0","packets_recv_rate":9397,"packets_sent_rate":32}]}},{"module":"process_property_module","command_id":"","data_timestamp":1514286255997,"data":{"process_base_data":{"gids":[0,0,0,0],"name":"agent.hosteye","numThreads":7,"parent":1,"pid":6319,"status":"S","uids":[0,0,0,0]},"process_cpu_percent":3.999999999996362,"process_mem":{"rss":20770816,"swap":0,"vms":369635328},"process_mem_percent":0.2515266}}]}
+[Info]2017/12/26 19:04:27 [DataUpModule]info received from dataup is:{
+	"code": 0,
+	"error_msg": "",
+	"data": null
+}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]doheartbeat timely
+[Info]2017/12/26 19:04:31 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:31 mac address is:fa:16:3e:b0:56:e5
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat agentid:d007b3373aacc8f4f168916835f9c74831a51519
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat host:gzhxy-q3-bce-cloud-141.epc.baidu.com
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info heartbeat ip:["10.121.201.72"]
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]Do heartbeat:&{GET https://yq01-security-shoujiweishi38.yq01.baidu.com:8734/controls HTTP/1.1 1 1 map[Agent_id:[d007b3373aacc8f4f168916835f9c74831a51519] Command_timestamp:[1514281042625] Policy_timestamp:[1514280035950] Host_name:[gzhxy-q3-bce-cloud-141.epc.baidu.com] Ip_list:[["10.121.201.72"]]] <nil> <nil> 0 [] true yq01-security-shoujiweishi38.yq01.baidu.com:8734 map[] map[] <nil> map[]   <nil> <nil> <nil> <nil>}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]info received from heartbeat is:{
+	"code": 0,
+	"error_msg": "",
+	"data": {
+		"command": {
+			"timestamp": 0,
+			"command_list": null
+		},
+		"policy": {
+			"timestamp": 0,
+			"policy_list": null
+		}
+	}
+}
+[Info]2017/12/26 19:04:31 [HeartBeatMoudle]start excute policy:
+[Info]2017/12/26 19:04:58 [system]receive signalquit
+[Info]2017/12/26 19:04:58 [system]worker end.
+[Info]2017/12/26 19:04:58 [system]process is closed.
 dayu1M
